@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+  <title>COURSETA</title>
+</head>
+<body>
+	<div class="header">
+		<h1 class="headerText" id="loginHeaderText">COURSETA</h1>
+		<a href="about.html" id="aboutButtonLogin">ABOUT</a>
+	</div>
+
+
+    <div class="loginContent" id="loginField">
+      <h1 class="contentTitle">Login</h1>
+      <label for="luserName">Username</label>
+      <input id="luserName" type="text">
+      <br><br>
+      <label for="lpassword">Password</label>
+      <input id="lpassword" type="password">
+      <br><br>
+      <button id="loginButton" onclick="login()"/>Login</button>
+    </div>
+
+    <div class="loginContent" id="CreateField">
+      <h1 class="contentTitle">Create Account</h1>
+      <label for="userName">Username</label>
+      <input id="userName" type="text"> </input>
+      <br><br>
+      <label for="password">Password</label>
+      <input id="password" type="password"></input>
+      <label for="password"></label>
+      <br><br>
+      <select name="Type" id="Type">
+	    <option value="none" selected disabled hidden>Select Your User Type</option>
+        <option value="student">Student</option>
+        <option value="instructor">Instructor</option>
+      </select>
+      <br><br>
+      <button onclick="addUser()" id="createButton">Create</button>
+    </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="function.js"></script>
+</body>
+</html>
